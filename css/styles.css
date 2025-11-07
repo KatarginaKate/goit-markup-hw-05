@@ -6,6 +6,7 @@
   --White: #fff;
   --Cloud: #f4f4fd;
   --Cornflower: #e7e9fc;
+  --Green: #31d0aa;
 }
 
 /* general */
@@ -156,12 +157,15 @@ img {
   margin: 0 auto;
   text-align: center;
   padding: 188px 0;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7)), url(../images/main-back.jpg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/main-back.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1440px;
-  
 }
 .main-screen-title {
   font-weight: 700;
@@ -239,6 +243,8 @@ img {
 
 .team-list {
   gap: 24px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-title,
@@ -280,6 +286,31 @@ img {
   letter-spacing: 0.02em;
   color: var(--Slate);
   text-align: center;
+  padding-bottom: 8px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-links .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--Iris);
+}
+
+.social-links .link:hover {
+  background-color: var(--Green);
+}
+
+.social-links .social-icon {
+  fill: var(--Cloud);
 }
 
 /* portfolio */
