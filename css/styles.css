@@ -483,10 +483,16 @@ img {
 }
 .subscribe-input {
   width: 264px;
-  padding: 8px 16px;
+  height: 40px;
+  padding-left: 16px;
   border: 1px solid var(--White);
   color: var(--White);
   border-radius: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -507,11 +513,6 @@ img {
 }
 .subscribe-input::placeholder {
   color: var(--White);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-input:hover::placeholder {
@@ -522,7 +523,7 @@ img {
   display: flex;
   align-items: center;
   background-color: var(--Iris);
-  gap: 16px;
+  min-width: 165px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -543,6 +544,7 @@ img {
 
 .icon-form {
   fill: var(--White);
+  margin-left: 16px; 
 }
 
 .backdrop {
